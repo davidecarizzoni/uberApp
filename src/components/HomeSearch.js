@@ -14,6 +14,27 @@ const HomeSearch = props => {
           <Icon name={'down'} size={16} />
         </View>
       </View>
+
+      {/*Previous destination*/}
+      <View style={styles.row}>
+        <View style={[styles.iconContainer, {borderRadius: 25}]}>
+          <Icon name={'clockcircle'} size={16} color={'white'} />
+        </View>
+        <Text style={styles.destinationText}> Destination text</Text>
+      </View>
+
+      {/*Home destination*/}
+      <View style={styles.row}>
+        <View
+          style={[
+            styles.iconContainer,
+            {borderRadius: 25},
+            {backgroundColor: '#396ecb'},
+          ]}>
+          <Icon name={'home'} size={16} color={'white'} />
+        </View>
+        <Text style={styles.destinationText}> Home text</Text>
+      </View>
     </View>
   );
 };
@@ -23,6 +44,7 @@ const styles = StyleSheet.create({
     margin: 10,
     padding: 10,
     backgroundColor: '#d9d9d9',
+    borderRadius: 5,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
@@ -39,6 +61,22 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     padding: 10,
     borderRadius: 20,
+  },
+  row: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderBottomWidth: 1,
+    borderColor: '#d9d9d9',
+    padding: 20,
+  },
+  iconContainer: {
+    backgroundColor: '#d9d9d9',
+    padding: 10,
+  },
+  destinationText: {
+    marginLeft: 10,
+    fontWeight: '600',
+    fontSize: 16,
   },
 });
 
