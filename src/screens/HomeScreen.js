@@ -2,6 +2,7 @@
 import * as React from 'react';
 import {View, StyleSheet} from 'react-native';
 import HomeMap from '../components/HomeMap';
+import HomeSearch from '../components/HomeSearch';
 import CovidMessage from '../components/CovidMessage';
 import tw from 'tailwind-react-native-classnames';
 
@@ -10,6 +11,7 @@ const HomeScreen = props => {
     <View>
       <HomeMap />
       <CovidMessage />
+      <HomeSearch />
     </View>
   );
 };
