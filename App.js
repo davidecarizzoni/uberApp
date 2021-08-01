@@ -8,14 +8,18 @@
 
 import React from 'react';
 import type {Node} from 'react';
-import {StatusBar, SafeAreaView, StyleSheet} from 'react-native';
+import {StatusBar, SafeAreaView, View, StyleSheet} from 'react-native';
 import HomeScreen from './src/screens/HomeScreen';
+import DestinationSearch from './src/screens/DestinationSearch';
 
 const App: () => Node = () => {
   return (
     <SafeAreaView>
-      <StatusBar barStyle={'dark-content'} />
-      <HomeScreen />
+      <View>
+        <StatusBar barStyle={'dark-content'} />
+        {/*<HomeScreen />*/}
+        <DestinationSearch />
+      </View>
     </SafeAreaView>
   );
 };

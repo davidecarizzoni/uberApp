@@ -1,17 +1,16 @@
 // @flow
 import * as React from 'react';
 import {Text, View, StyleSheet} from 'react-native';
-import tw from 'tailwind-react-native-classnames';
 
 const CovidMessage = props => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Travel only if is necessary</Text>
-      <Text style={tw`text-white mb-2`}>
+      <Text>
         This is a completely random text so i write something in the way that it
         seems real
       </Text>
-      <Text style={[tw`text-white`, styles.subTitle]}>Learn more </Text>
+      <Text>Learn more </Text>
     </View>
   );
 };
